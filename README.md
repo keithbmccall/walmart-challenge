@@ -16,7 +16,7 @@ git clone https://github.com/keithmccall/walmart-challenge.git
 
 #### Install with yarn
 
-`yarn`
+`yarn && react-native link`
 
 #### Run iOS
 
