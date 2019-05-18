@@ -4,6 +4,8 @@ import Navigation from "./navigation/Router";
 
 export default class App extends Component {
     render() {
-        return (<Navigation/>);
+        return (
+            <Navigation/>
+        );
     }
 }

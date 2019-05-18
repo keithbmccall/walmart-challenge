@@ -1,15 +1,19 @@
 interface CommonItem {
-    pricing: {
-        subtotal: number,
-        savings: number,
-        tax: number,
-        total: number,
-        zip: number
-    },
+    pricing: ItemPricing,
     itemDetails: {
         item_name: string,
-        quantity: number
+        quantity: number,
+        image: string
     }
 }
 
-export type CommonItemType = CommonItem
+interface ItemPricing {
+    subtotal: number,
+    savings: number,
+    tax: number,
+    total: number,
+    zip: number
+}
+
+export type CommonItemType = CommonItem;
+export type CommonItemPricingType = ItemPricing

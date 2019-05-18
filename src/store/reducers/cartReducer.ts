@@ -1,11 +1,13 @@
-import {CartItemTypes, FETCH_CART_ITEMS} from "../actions/cartActions";
+import {CartItemTypes, FETCH_CART_ITEMS, APPLY_PROMO_CODE} from "../actions/cartActions";
 import {CommonItemType} from "types-store";
 
 export type State = {
-    cartItems: CommonItemType[]
+    cartItems: [] | CommonItemType[],
+    appliedPromoCode: {} | null
 }
 export const initialState: State = {
-    cartItems: []
+    cartItems: [],
+    appliedPromoCode: null
 };
 
 export const reducer = (state: State = initialState, action: CartItemTypes) => {
@@ -15,6 +17,11 @@ export const reducer = (state: State = initialState, action: CartItemTypes) => {
                 ...state,
                 cartItems: action.payload
             };
+        case APPLY_PROMO_CODE:
+            return{
+                ...state,
+                appliedPromoCode: action.payload
+            }
         default:
             return state;
     }

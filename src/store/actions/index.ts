@@ -1,6 +1,7 @@
-import {fetchCartItems} from './cartActions'
+import {fetchCartItems, applyPromoCode} from './cartActions'
 
 
 export const cartActions = {
-    fetchCartItems
+    fetchCartItems,
+    applyPromoCode
 }

@@ -1,7 +1,9 @@
-import {getPricingData} from './cart'
+import {getPricingData, validatePromoCode} from './cart'
+
 
 const API = {
-    getPricingData
+    getPricingData,
+    validatePromoCode
 }
 
 export default API
