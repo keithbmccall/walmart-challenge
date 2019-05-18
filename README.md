@@ -1,4 +1,4 @@
-# walmart-challenge
+
 # walmart-challenge
 
 I used TypeScript with React Native and Redux, with Thunk middleware. I also laid the foundation for React Navigation to display scalability.
